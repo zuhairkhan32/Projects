@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+
+
+    
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <img src="./assest/pvr.png" class="brand-logo" alt="" />
+      <ul class="nav-links">
+        <li class="nav-items"><a href="#">Trailer</a></li>
+        <li class="nav-items"><a href="#">Bollywood</a></li>
+        <li class="nav-items"><a href="#">Hollywood</a></li>
+        <li class="nav-items"><a href="#">South moive</a></li>
+      </ul>
+
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="Search for your city" />
+        
+        <a href="#" class="login-link">login</a>
+      </div>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        
+      </div>
+    </div>
+
+   
+    <h2> Select a Movie</h2>
+    <form action="">
+      
+      <p> Select a Movie:</p>
+      <select name="moive_name" id="movie">
+        <option value="220">Raya and the last Dragon (RS.220)</option>
+        <option value="320">Wanda Vision (RS.320)</option>
+        <option value="250">Falcon and the Winter Soldier (RS.250)</option>
+        <option value="260">Luca (RS.260)</option>
+      </select>
+    
+
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+  </form>
+    <script src="script.js"></script>
+
+    
+    <section class="payment">
+    <h2>Payment Information</h2>
+    <label>Card Type:
+       <select name="card_type" id="card_type">
+           <option value="">--Select a card type--</option>
+           <option value="Visa">Visa</option>
+           <option value="Rupay">Rupay</option>
+           <option value="mastercard">mastercard</option>
+        </select>
+    </label>
+    <p>
+        Card Number <input type="number" name="card_number" id="card_number">
+    </p>
+    <p>
+        Expiration Date: <input type="date" name="exp-date" id="exp_date">
+    </p>
+    <p>
+        cvv <input type="password" name="cvv" id="cvv">
+    </p>
+    <input type="submit" value="Pay Now" class="paynow">
+  </section>
+
+  
+
+   
+   <footer>
+    <div>
+      <img src="./Assest/pvr.png" alt="logo" />
+      
+      <div>
+        <img src="./Assest/facebook.png" alt="facebook icon" />
+        <img src="./Assest/twitter.png" alt="twitter icon" />
+        <img src="./Assest/instagram.png" alt="instagram icon" />
+      </div>
+      <p>2023 Award winning PVR</p>
+    </div>
+
+    
+    <div class="footer-links">
+      <div class="footer-links-content">
+        <ul>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">America</a></li>
+          <li><a href="#">Asia</a></li>
+          <li><a href="#">Europe</a></li>
+          <li><a href="#">Africa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-content">
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-content">
+        <ul>
+          <li><a href="#">Legals</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Company</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <span>&copy;Zuhair Mushtaq Khan</span>
+  </body>
+</html>
